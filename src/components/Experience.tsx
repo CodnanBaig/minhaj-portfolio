@@ -10,32 +10,52 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      position: "Senior Production Director",
-      company: "Global Events Management",
-      duration: "2021 - Present",
-      location: "Dubai, UAE",
-      description: "Leading high-profile productions across the Middle East, managing multi-million dollar budgets and cross-functional teams of 50+ professionals. Responsible for strategic planning, creative direction, and flawless execution of international conferences, music festivals, and corporate launches.",
+      position: "General Manager",
+      company: "PHNTM",
+      duration: "Nov 2021 - Present",
+      location: "Middle East & Singapore",
+      description: [
+        "Directed region-wide production operations, overseeing large-scale projects in the UAE, KSA, Qatar, and Singapore",
+        "Developed business strategy and executed growth plans that expanded market share and profitability across multiple markets",
+        "Managed cross-functional creative, production, and technical teams for flawless delivery across international events",
+        "Built and nurtured long-term client partnerships, driving recurring multi-million-dirham contracts and cross-border collaborations"
+      ],
     },
     {
-      position: "Technical Production Manager",
-      company: "Creative Productions LLC",
-      duration: "2018 - 2021",
-      location: "Singapore",
-      description: "Oversaw technical aspects of major events throughout Southeast Asia, including sound, lighting, staging, and video elements. Implemented innovative solutions for challenging venues and enhanced production quality while optimizing operational efficiencies.",
+      position: "Production Manager (Freelance)",
+      company: "Five Currents",
+      duration: "Aug 2021 - Oct 2021",
+      location: "EXPO 2020 Opening Ceremony",
+      description: [
+        "Managed scenic and technical production for one of the UAE's largest global showcases",
+        "Oversaw the planning, build, and execution of complex staging and infrastructure elements",
+        "Led cross-vendor coordination to ensure safe, on-time delivery of all scenic components",
+        "Collaborated closely with the Technical Director and international teams to troubleshoot and optimize execution on the ground"
+      ],
     },
     {
-      position: "Event Production Specialist",
-      company: "Premiere Events & Entertainment",
-      duration: "2015 - 2018",
-      location: "Abu Dhabi, UAE",
-      description: "Managed end-to-end production for corporate and government events. Developed creative concepts, coordinated logistics, and oversaw on-site execution. Successfully delivered over 100 events with consistent client satisfaction.",
+      position: "Events Planner",
+      company: "My Whoosh",
+      duration: "Nov 2020 - Apr 2021",
+      location: "Abu Dhabi",
+      description: [
+        "Led planning, budgeting, and execution of regional event activations",
+        "Built marketing campaigns and activations across digital and physical touchpoints",
+        "Streamlined vendor coordination, logistics, and production delivery",
+        "Balanced cost-efficiency with high-impact creative outputs for brand growth"
+      ],
     },
     {
-      position: "Audio Visual Coordinator",
-      company: "Media Solutions Group",
-      duration: "2012 - 2015",
-      location: "Bangkok, Thailand",
-      description: "Coordinated audio-visual requirements for conferences and corporate events. Collaborated with clients to determine technical needs and supervised technical teams during setup and operation.",
+      position: "Production Manager",
+      company: "Red Event Services",
+      duration: "Mar 2019 - Mar 2020",
+      location: "Dubai",
+      description: [
+        "Delivered brand experiences, gala events, and corporate showcases across the UAE",
+        "Managed crew hiring, budgeting, and event floor operations",
+        "Executed immersive builds under high-pressure timelines and strict safety protocols",
+        "Fostered vendor networks and scaled operational capacity across concurrent events"
+      ],
     },
   ];
 
@@ -98,9 +118,11 @@ const Experience: React.FC = () => {
                     <span className="text-gray-400 ml-2">• {exp.location}</span>
                   </div>
                   
-                  <p className="text-gray-300 leading-relaxed">
-                    {exp.description}
-                  </p>
+                  <ul className="text-gray-300 leading-relaxed list-disc list-inside space-y-2">
+                    {exp.description.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
                 </div>
               </motion.div>
             ))}

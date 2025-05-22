@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Award, Users, Zap, Clock } from 'lucide-react';
+import { Award, Users, Zap, Clock, MapPin } from 'lucide-react';
 
 const About: React.FC = () => {
   const [ref, inView] = useInView({
@@ -31,24 +31,24 @@ const About: React.FC = () => {
 
   const keyPoints = [
     {
-      icon: <Award className="text-accent-400" size={24} />,
-      title: "Strategic Planner",
-      description: "Creating successful event plans with clear objectives and measurable outcomes."
+      icon: <Users className="text-accent-400" size={24} />,
+      title: "Leadership & Team Management",
+      description: "Building and leading diverse teams to deliver experiences at scale across MENA & Asia."
     },
     {
-      icon: <Users className="text-accent-400" size={24} />,
-      title: "Team Leader",
-      description: "Directing cross-functional teams with clear communication and delegation."
+      icon: <Award className="text-accent-400" size={24} />,
+      title: "Large-Scale Event Production",
+      description: "Managing high-stakes, multi-million-dirham builds from brief to final applause."
     },
     {
       icon: <Zap className="text-accent-400" size={24} />,
-      title: "Creative Problem Solver",
-      description: "Finding innovative solutions to complex production challenges on the fly."
+      title: "Business Development & Strategy",
+      description: "Driving growth and market expansion across multiple international markets."
     },
     {
       icon: <Clock className="text-accent-400" size={24} />,
-      title: "Deadline Driven",
-      description: "Consistently delivering high-quality productions within tight timelines."
+      title: "Cross-border Operations",
+      description: "Executing seamless productions across UAE, KSA, Qatar, and Singapore."
     }
   ];
 
@@ -73,16 +73,24 @@ const About: React.FC = () => {
             className="mb-12 text-lg text-gray-300 leading-relaxed"
             variants={itemVariants}
           >
+            <h3 className="text-2xl font-bold mb-6 text-white">
+              Live Events & Production Leader Delivering High-Impact Experiences Across MENA & Asia
+            </h3>
             <p className="mb-4">
-              I'm a strategic and calm-headed live events & production leader with over a decade of experience 
-              across the Middle East and Asia. Specializing in creating memorable experiences, 
-              I blend creative vision with technical expertise to deliver exceptional events.
+              I'm Minhaj Gouda — a calm-headed force behind some of the Middle East's boldest live experiences. 
+              With over a decade of experience across the UAE, Saudi Arabia, Qatar, and Singapore, 
+              I've built a career delivering projects where failure is not an option.
+            </p>
+            <p className="mb-4">
+              From world expos and government showcases to arena-scale concerts, cultural spectacles, 
+              and brand-defining activations, I've built and led diverse teams to deliver experiences at scale. 
+              With a track record of managing high-stakes, multi-million-dirham builds, I drive production from 
+              the first brief to final applause — combining strategic foresight, creative precision, and 
+              operational control at every step.
             </p>
             <p>
-              Whether it's a corporate conference, concert, or international exhibition, 
-              I approach each project with meticulous attention to detail while maintaining the flexibility 
-              to adapt to the dynamic nature of live production. My strength lies in leading diverse teams 
-              toward a common creative vision while staying cool under pressure.
+              Whether it's an opening ceremony for the world, a concert for 80,000 fans, or a government-led 
+              initiative on the global stage, I know how to make experiences unforgettable — and deliver under pressure.
             </p>
           </motion.div>
 

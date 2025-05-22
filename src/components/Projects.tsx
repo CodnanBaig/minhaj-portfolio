@@ -13,36 +13,52 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: "International Music Festival",
+      title: "Wireless Festival",
       image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Led production for a 3-day music festival featuring international artists across 4 stages with over 25,000 attendees.",
-      date: "June 2023",
-      location: "Dubai, UAE",
-      tags: ["Music Festival", "Live Sound", "Stage Production", "Artist Management"]
-    },
-    {
-      title: "Corporate Leadership Summit",
-      image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Managed end-to-end production for a high-profile corporate summit with C-level executives from Fortune 500 companies.",
-      date: "November 2022",
-      location: "Singapore",
-      tags: ["Corporate Event", "Conference", "Executive Production", "Technical Direction"]
-    },
-    {
-      title: "National Day Celebration",
-      image: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Directed a large-scale national celebration featuring drone shows, synchronized performances, and live broadcast.",
-      date: "December 2022",
+      description: "Led production for the Abu Dhabi edition of the iconic Wireless Festival, managing multiple stages, international artists, and large-scale audience experiences.",
+      date: "2023",
       location: "Abu Dhabi, UAE",
-      tags: ["Cultural Event", "Drone Show", "Live Broadcast", "Stage Design"]
+      tags: ["Music Festival", "International Artists", "Multi-Stage Production", "PHNTM"]
     },
     {
-      title: "Tech Product Launch",
+      title: "Blackpink Tour",
+      image: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Directed production for Blackpink's Middle East tour stops, including Riyadh and Abu Dhabi, delivering world-class concert experiences for thousands of fans.",
+      date: "2023",
+      location: "Riyadh, KSA & Abu Dhabi, UAE",
+      tags: ["Concert Tour", "International Artists", "Arena Production", "PHNTM"]
+    },
+    {
+      title: "Maraya Concert Series",
+      image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Managed production for the prestigious concert series in the historic city of Al Ula, creating unforgettable musical experiences in a unique cultural setting.",
+      date: "2023",
+      location: "Al Ula, KSA",
+      tags: ["Concert Series", "Cultural Venue", "International Artists", "PHNTM"]
+    },
+    {
+      title: "EXPO 2020 Opening Ceremony",
       image: "https://images.pexels.com/photos/3419348/pexels-photo-3419348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Delivered a cutting-edge product launch event with immersive tech experiences, dynamic lighting, and seamless presentations.",
-      date: "March 2023",
-      location: "Bangkok, Thailand",
-      tags: ["Product Launch", "Technology", "Experience Design", "Lighting Design"]
+      description: "Led scenic and technical production for one of the UAE's largest global showcases, managing complex staging and infrastructure elements for the world stage.",
+      date: "2021",
+      location: "Dubai, UAE",
+      tags: ["Opening Ceremony", "World Expo", "Technical Production", "Five Currents"]
+    },
+    {
+      title: "Lusail Super Cup Opening Ceremony",
+      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Directed the opening ceremony production for the Lusail Super Cup, creating a spectacular showcase of sports and entertainment in Qatar.",
+      date: "2022",
+      location: "Doha, Qatar",
+      tags: ["Sports Ceremony", "Opening Show", "International Event", "PHNTM"]
+    },
+    {
+      title: "Qatar Live",
+      image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Managed production for Qatar Live, delivering high-impact entertainment experiences during a major international sporting event.",
+      date: "2022",
+      location: "Doha, Qatar",
+      tags: ["Entertainment", "Sports Event", "International Production", "PHNTM"]
     },
   ];
 

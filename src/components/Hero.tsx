@@ -54,16 +54,15 @@ const Hero: React.FC = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
             variants={itemVariants}
           >
-            <span className="block">Hi, I'm</span>
-            <span className="block text-glow text-accent-400 mt-2">Minhaj Gouda</span>
+            <span className="block text-glow text-accent-400">Minhaj Gouda</span>
           </motion.h1>
 
           <motion.p 
             className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed"
             variants={itemVariants}
           >
-            <span className="block font-light italic">"Strategic. Creative.</span>
-            <span className="block font-light italic">Calm under pressure."</span>
+            <span className="block font-light">Strategic. Creative.</span>
+            <span className="block font-light">Calm under pressure.</span>
           </motion.p>
 
           <motion.div 
@@ -80,7 +79,7 @@ const Hero: React.FC = () => {
               <Send size={18} />
             </motion.a>
             <motion.a
-              href="#" 
+              href="/resume.pdf" 
               className="btn bg-transparent border-2 border-primary-400 text-white font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center gap-2 transition-all duration-300 hover:bg-primary-400/10"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
-  Calendar, Users, Lightbulb, Presentation, 
-  LineChart, Headphones, PenTool, Globe 
+  Users, Award, Zap, DollarSign, 
+  Handshake, Lightbulb, Globe 
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
@@ -34,52 +34,46 @@ const Skills: React.FC = () => {
 
   const skills = [
     {
-      icon: <Calendar size={28} />,
-      name: "Event Planning",
+      icon: <Users size={28} />,
+      name: "Leadership & Team Management",
       level: 95,
-      description: "Strategic event planning and conceptualization from start to finish."
+      description: "Building and leading diverse teams to deliver experiences at scale across MENA & Asia."
     },
     {
-      icon: <Users size={28} />,
-      name: "Team Leadership",
+      icon: <Award size={28} />,
+      name: "Large-Scale Event Production",
+      level: 95,
+      description: "Managing high-stakes, multi-million-dirham builds from brief to final applause."
+    },
+    {
+      icon: <Zap size={28} />,
+      name: "Business Development & Strategy",
       level: 90,
-      description: "Managing diverse teams of creative and technical professionals."
+      description: "Driving growth and market expansion across multiple international markets."
+    },
+    {
+      icon: <DollarSign size={28} />,
+      name: "Budgeting & Cost Control",
+      level: 92,
+      description: "Optimizing resources and managing budgets for complex, multi-million-dirham productions."
+    },
+    {
+      icon: <Handshake size={28} />,
+      name: "Vendor & Stakeholder Management",
+      level: 90,
+      description: "Building and maintaining strong relationships with partners and stakeholders across the region."
     },
     {
       icon: <Lightbulb size={28} />,
-      name: "Creative Direction",
-      level: 85,
-      description: "Developing unique creative concepts for unforgettable experiences."
-    },
-    {
-      icon: <Presentation size={28} />,
-      name: "Technical Production",
+      name: "Creative Execution & Risk Management",
       level: 92,
-      description: "Overseeing sound, lighting, staging, and technical requirements."
-    },
-    {
-      icon: <LineChart size={28} />,
-      name: "Budget Management",
-      level: 88,
-      description: "Creating and managing budgets for events of all sizes."
-    },
-    {
-      icon: <Headphones size={28} />,
-      name: "Live Sound Engineering",
-      level: 80,
-      description: "Audio engineering for live events and productions."
-    },
-    {
-      icon: <PenTool size={28} />,
-      name: "Content Creation",
-      level: 75,
-      description: "Developing multimedia content for events and productions."
+      description: "Balancing innovative creative vision with robust risk mitigation strategies."
     },
     {
       icon: <Globe size={28} />,
-      name: "International Logistics",
-      level: 85,
-      description: "Managing cross-border event logistics and vendor relations."
+      name: "Cross-border Operations",
+      level: 95,
+      description: "Executing seamless productions across UAE, KSA, Qatar, and Singapore."
     }
   ];
 
@@ -100,7 +94,7 @@ const Skills: React.FC = () => {
           </motion.h2>
 
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             variants={containerVariants}
           >
             {skills.map((skill, index) => (

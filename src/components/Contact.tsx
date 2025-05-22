@@ -65,24 +65,26 @@ const Contact: React.FC = () => {
     {
       icon: <Mail size={24} className="text-accent-400" />,
       title: "Email",
-      value: "contact@minhajgouda.com",
+      value: "minhajgouda@gmail.com",
     },
     {
       icon: <MapPin size={24} className="text-accent-400" />,
       title: "Location",
-      value: "Dubai, UAE | Available for travel",
+      value: "Dubai, UAE | Available for travel across MENA & Asia",
     },
     {
-      icon: <Phone size={24} className="text-accent-400" />,
-      title: "Phone",
-      value: "+971 50 123 4567",
+      icon: <Linkedin size={24} className="text-accent-400" />,
+      title: "LinkedIn",
+      value: "linkedin.com/in/minhaj-gouda",
     },
   ];
 
   const socialLinks = [
-    { icon: <Linkedin size={20} />, url: "#", name: "LinkedIn" },
-    { icon: <Instagram size={20} />, url: "#", name: "Instagram" },
-    { icon: <Twitter size={20} />, url: "#", name: "Twitter" },
+    { 
+      icon: <Linkedin size={20} />, 
+      url: "https://linkedin.com/in/minhaj-gouda", 
+      name: "LinkedIn" 
+    },
   ];
 
   return (
@@ -108,9 +110,9 @@ const Contact: React.FC = () => {
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                Ready to bring your next event to life? Whether you're planning a corporate event, 
-                concert, or international exhibition, I'd love to discuss how we can create an 
-                unforgettable experience. Feel free to reach out using the form or contact details.
+                Looking to create an unforgettable live experience? Whether it's a world-class concert, 
+                international exhibition, or government showcase, I'd love to discuss how we can bring 
+                your vision to life. Let's connect and explore the possibilities.
               </p>
 
               <div className="space-y-6">
