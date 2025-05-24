@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Download, Send } from 'lucide-react';
+import { Typewriter } from 'react-simple-typewriter';
 
 const Hero: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,10 +52,30 @@ const Hero: React.FC = () => {
           </motion.div>
 
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="text-2xl md:text-6xl lg:text-5xl font-bold mb-6 leading-tight"
             variants={itemVariants}
           >
-            <span className="block text-glow text-accent-400">Minhaj Gouda</span>
+            <span className="block text-glow text-4xl md:text-6xl lg:text-7xl text-accent-400">Minhaj Gouda</span>
+            <span className="block mt-4">
+              I produce{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 to-teal-500">
+                <Typewriter
+                  words={[
+                    'stadium-shaking concerts',
+                    'unforgettable live experiences',
+                    'global opening ceremonies',
+                    'impactful brand activations',
+                    'immersive moments'
+                  ]}
+                  loop={0}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={100}
+                  deleteSpeed={70}
+                  delaySpeed={1500}
+                />
+              </span>
+            </span>
           </motion.h1>
 
           <motion.p 
