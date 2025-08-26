@@ -10,30 +10,30 @@
     "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
-    "framer-motion": "^11.0.0",
+    "framer-motion": "^10.18.0",
     "imagemin": "^9.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^10.0.0",
     "imagemin-webp": "^8.0.0",
-    "lucide-react": "^0.400.0",
-    "next": "^15.2.4",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "lucide-react": "^0.344.0",
+    "next": "^14.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-intersection-observer": "^9.8.0",
     "react-simple-typewriter": "^5.0.1",
     "sharp": "^0.34.3",
     "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/react": "^19.0.0",
-    "@types/react-dom": "^19.0.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.18",
-    "eslint": "^9.0.0",
-    "eslint-config-next": "^15.2.4",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.6.0"
+    "typescript": "^5.5.3"
   },
   "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
