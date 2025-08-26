@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -100,7 +102,7 @@ const Contact: React.FC = () => {
             className="section-heading text-center mx-auto"
             variants={itemVariants}
           >
-            Let's Collaborate
+            Let&apos;s Collaborate
           </motion.h2>
 
           <motion.div 
@@ -109,10 +111,14 @@ const Contact: React.FC = () => {
           >
             <motion.div variants={itemVariants}>
               <h3 className="text-2xl font-bold mb-6">Get In Touch</h3>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                Ready to build something unforgettable? Whether you’re staging a world-class concert, an international exhibition, or a government mega-showcase — I’m here to turn bold visions into powerful realities.
+              </p>
+              <p className="text-gray-300 mb-4 leading-relaxed">
+                From creative spark to final spotlight, let’s team up to deliver experiences that move crowds and make headlines.
+              </p>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                Looking to create an unforgettable live experience? Whether it's a world-class concert, 
-                international exhibition, or government showcase, I'd love to discuss how we can bring 
-                your vision to life. Let's connect and explore the possibilities.
+                Drop me a message — let’s make it epic.
               </p>
 
               <div className="space-y-6">
@@ -172,7 +178,7 @@ const Contact: React.FC = () => {
                     <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
                     <p className="text-gray-300">
                       Your message has been sent successfully. 
-                      I'll get back to you as soon as possible!
+                      I&apos;ll get back to you as soon as possible!
                     </p>
                   </motion.div>
                 ) : (

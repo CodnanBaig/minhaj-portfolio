@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -9,6 +11,18 @@ const Experience: React.FC = () => {
   });
 
   const experiences = [
+    {
+      position: "Head of Operations",
+      company: "Apex Event Services",
+      duration: "Jun 2025 - Present",
+      location: "Middle East",
+      description: [
+        "Leading operations across the Middle East, managing client servicing, execution, and business growth for high-profile event infrastructure projects.",
+        "Securing partnerships with top regional and global agencies producing large-scale events in the Middle East.",
+        "Driving concept development using Apex’s in-house capabilities, including a 15,000-seat + 30,000-standing pop-up stadium and other innovative structural solutions.",
+        "Bridging creative ideas with technical execution—delivering certified, scalable, and impact-driven solutions for concerts, festivals, and government activations."
+      ],
+    },
     {
       position: "General Manager",
       company: "PHNTM",

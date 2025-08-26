@@ -1,7 +1,9 @@
+'use client'
+
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChevronLeft, ChevronRight, Link, Calendar, MapPin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Link, Calendar, MapPin, Image as ImageIcon, X } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
@@ -10,19 +12,37 @@ const Projects: React.FC = () => {
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showGallery, setShowGallery] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<string[]>([]);
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
 
   const projects = [
     {
-      title: "Wireless Festival",
-      image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Wireless Festival Abu Dhabi",
+      image: "/optimized/wireless abu dhabi/Wireless-Festival-2023.jpg",
+      gallery: [
+        "/optimized/wireless abu dhabi/Wireless-Festival-2023.jpg",
+        "/optimized/wireless abu dhabi/Wireless-Festival-Middle-East-2023-6_13132132.jpg",
+        "/optimized/wireless abu dhabi/website-banner-size-1050450-new-1-14-1280x720.png",
+        "/optimized/wireless abu dhabi/GettyImages-1474070432_SMALL.jpg"
+      ],
       description: "Led production for the Abu Dhabi edition of the iconic Wireless Festival, managing multiple stages, international artists, and large-scale audience experiences.",
       date: "2023",
       location: "Abu Dhabi, UAE",
       tags: ["Music Festival", "International Artists", "Multi-Stage Production", "PHNTM"]
     },
     {
-      title: "Blackpink Tour",
-      image: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Blackpink Middle East Tour",
+      image: "/optimized/black pink/BlackPink_MiddleEast-001.jpg",
+      gallery: [
+        "/optimized/black pink/BlackPink_MiddleEast-001.jpg",
+        "/optimized/black pink/BlackPink_MiddleEast-003.jpg",
+        "/optimized/black pink/BlackPink_MiddleEast-005.jpg",
+        "/optimized/black pink/BlackPink_MiddleEast-006.jpg",
+        "/optimized/black pink/BlackPink_MiddleEast-010.jpg",
+        "/optimized/black pink/2.jpeg",
+        "/optimized/black pink/3.png"
+      ],
       description: "Directed production for Blackpink's Middle East tour stops, including Riyadh and Abu Dhabi, delivering world-class concert experiences for thousands of fans.",
       date: "2023",
       location: "Riyadh, KSA & Abu Dhabi, UAE",
@@ -30,7 +50,17 @@ const Projects: React.FC = () => {
     },
     {
       title: "Maraya Concert Series",
-      image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/optimized/maraya concert series/Maraya_John_Legend-002.jpg",
+      gallery: [
+        "/optimized/maraya concert series/Maraya_John_Legend-002.jpg",
+        "/optimized/maraya concert series/Maraya_John_Legend-005.jpg",
+        "/optimized/maraya concert series/Maraya_John_Legend-007.jpg",
+        "/optimized/maraya concert series/Maraya_John_Legend-013.jpg",
+        "/optimized/maraya concert series/Maraya_One_Republic-001.jpg",
+        "/optimized/maraya concert series/Maraya_One_Republic-009.jpg",
+        "/optimized/maraya concert series/Maraya_One_Republic-012.jpg",
+        "/optimized/maraya concert series/Maraya_One_Republic-028.jpg"
+      ],
       description: "Managed production for the prestigious concert series in the historic city of Al Ula, creating unforgettable musical experiences in a unique cultural setting.",
       date: "2023",
       location: "Al Ula, KSA",
@@ -38,7 +68,14 @@ const Projects: React.FC = () => {
     },
     {
       title: "EXPO 2020 Opening Ceremony",
-      image: "https://images.pexels.com/photos/3419348/pexels-photo-3419348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/optimized/expo 2020 opening ceremony/Expo-2020-Opening-Ceremony.jpg",
+      gallery: [
+        "/optimized/expo 2020 opening ceremony/Expo-2020-Opening-Ceremony.jpg",
+        "/optimized/expo 2020 opening ceremony/3CABA3DC-6DD0-4862-96F6-DBA642CC0958.jpeg",
+        "/optimized/expo 2020 opening ceremony/Women-s_Pavilion_Inauguration_at_Al_Wasl_m6765.jpg",
+        "/optimized/expo 2020 opening ceremony/9fd1c463-22e4-4bbe-8313-b6d6923f194f.jpg",
+        "/optimized/expo 2020 opening ceremony/expo-open.png"
+      ],
       description: "Led scenic and technical production for one of the UAE's largest global showcases, managing complex staging and infrastructure elements for the world stage.",
       date: "2021",
       location: "Dubai, UAE",
@@ -46,20 +83,95 @@ const Projects: React.FC = () => {
     },
     {
       title: "Lusail Super Cup Opening Ceremony",
-      image: "https://images.pexels.com/photos/3621104/pexels-photo-3621104.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/optimized/lusail super cup/Lusail_Opening-122.jpg",
+      gallery: [
+        "/optimized/lusail super cup/Lusail_Opening-122.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-128.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-139.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-152.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-159.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-170.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-171.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-178.jpg",
+        "/optimized/lusail super cup/Lusail_Opening-231.jpg"
+      ],
       description: "Directed the opening ceremony production for the Lusail Super Cup, creating a spectacular showcase of sports and entertainment in Qatar.",
       date: "2022",
       location: "Doha, Qatar",
       tags: ["Sports Ceremony", "Opening Show", "International Event", "PHNTM"]
     },
     {
-      title: "Qatar Live",
-      image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title: "Qatar Live Entertainment",
+      image: "/optimized/qatar live/QatarLive_21_MAJIDA-001.jpg",
+      gallery: [
+        "/optimized/qatar live/QatarLive_21_MAJIDA-001.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-066.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-074.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-079.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-140.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-172.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-177.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-188.jpg",
+        "/optimized/qatar live/QatarLive_21_MAJIDA-189.jpg"
+      ],
       description: "Managed production for Qatar Live, delivering high-impact entertainment experiences during a major international sporting event.",
       date: "2022",
       location: "Doha, Qatar",
       tags: ["Entertainment", "Sports Event", "International Production", "PHNTM"]
     },
+    {
+      title: "IO.net Production",
+      image: "/optimized/io net/PHNTM IO.net-02.jpg",
+      gallery: [
+        "/optimized/io net/PHNTM IO.net-02.jpg",
+        "/optimized/io net/PHNTM IO.net-04.jpg",
+        "/optimized/io net/PHNTM IO.net-06.jpg",
+        "/optimized/io net/PHNTM IO.net-07.jpg",
+        "/optimized/io net/PHOTO-2024-04-18-22-15-27.jpg",
+        "/optimized/io net/PHOTO-2024-04-18-22-15-27 2.jpg",
+        "/optimized/io net/PHOTO-2024-05-25-05-33-47 (1).jpg",
+        "/optimized/io net/PHOTO-2024-05-25-05-33-49.jpg"
+      ],
+      description: "Led production operations for IO.net, managing technical infrastructure and creative execution for innovative technology showcases.",
+      date: "2024",
+      location: "Dubai, UAE",
+      tags: ["Technology", "Innovation", "Technical Production", "PHNTM"]
+    },
+    {
+      title: "Dubai Media Operations",
+      image: "/optimized/dubai media/PHNTM DMO-03.jpg",
+      gallery: [
+        "/optimized/dubai media/PHNTM DMO-03.jpg",
+        "/optimized/dubai media/PHNTM DMO-05.jpg",
+        "/optimized/dubai media/PHNTM DMO-06.jpg",
+        "/optimized/dubai media/PHNTM DMO-07.jpg",
+        "/optimized/dubai media/PHNTM DMO-13.jpg",
+        "/optimized/dubai media/PHNTM DMO-14.jpg",
+        "/optimized/dubai media/PHNTM DMO-15.jpg",
+        "/optimized/dubai media/PHNTM DMO-17.jpg"
+      ],
+      description: "Directed media operations and production services in Dubai, delivering high-quality content and technical solutions for various media projects.",
+      date: "2023-2024",
+      location: "Dubai, UAE",
+      tags: ["Media Production", "Technical Services", "Content Creation", "PHNTM"]
+    },
+    {
+      title: "Cinema Medley Productions",
+      image: "/optimized/cinema medley/IMG_3571.JPG",
+      gallery: [
+        "/optimized/cinema medley/IMG_3571.JPG",
+        "/optimized/cinema medley/IMG_3574.JPG",
+        "/optimized/cinema medley/IMG_3577.JPG",
+        "/optimized/cinema medley/IMG_3589.JPG",
+        "/optimized/cinema medley/IMG_7113.JPG",
+        "/optimized/cinema medley/IMG_7139.JPG",
+        "/optimized/cinema medley/IMG_7151.JPG"
+      ],
+      description: "Managed production for cinema and entertainment projects, overseeing technical execution and creative direction for film-related events.",
+      date: "2023-2024",
+      location: "Dubai, UAE",
+      tags: ["Cinema", "Entertainment", "Film Production", "PHNTM"]
+    }
   ];
 
   const nextProject = () => {
@@ -68,6 +180,24 @@ const Projects: React.FC = () => {
 
   const prevProject = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+  };
+
+  const openGallery = (images: string[]) => {
+    setGalleryImages(images);
+    setCurrentGalleryIndex(0);
+    setShowGallery(true);
+  };
+
+  const closeGallery = () => {
+    setShowGallery(false);
+  };
+
+  const nextGalleryImage = () => {
+    setCurrentGalleryIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+  };
+
+  const prevGalleryImage = () => {
+    setCurrentGalleryIndex((prevIndex) => (prevIndex - 1 + galleryImages.length) % galleryImages.length);
   };
 
   const containerVariants = {
@@ -156,14 +286,24 @@ const Projects: React.FC = () => {
                     ))}
                   </div>
                   
-                  <motion.a
-                    href="#"
-                    className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 transition-colors"
-                    whileHover={{ x: 5 }}
-                  >
-                    <span>View Project Details</span>
-                    <Link size={16} />
-                  </motion.a>
+                  <div className="flex gap-4">
+                    <motion.button
+                      onClick={() => openGallery(projects[currentIndex].gallery)}
+                      className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 transition-colors bg-primary-900/40 px-4 py-2 rounded-lg"
+                      whileHover={{ x: 5 }}
+                    >
+                      <ImageIcon size={16} />
+                      <span>View Gallery</span>
+                    </motion.button>
+                    <motion.a
+                      href="#"
+                      className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 transition-colors"
+                      whileHover={{ x: 5 }}
+                    >
+                      <span>View Project Details</span>
+                      <Link size={16} />
+                    </motion.a>
+                  </div>
                 </div>
               </motion.div>
             </AnimatePresence>
@@ -200,6 +340,62 @@ const Projects: React.FC = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Gallery Modal */}
+      <AnimatePresence>
+        {showGallery && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            onClick={closeGallery}
+          >
+            <div className="relative max-w-6xl max-h-full" onClick={(e) => e.stopPropagation()}>
+              <button
+                onClick={closeGallery}
+                className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 transition-colors"
+              >
+                <X size={32} />
+              </button>
+              
+              <div className="relative">
+                <img
+                  src={galleryImages[currentGalleryIndex]}
+                  alt={`Gallery image ${currentGalleryIndex + 1}`}
+                  className="max-w-full max-h-[80vh] object-contain rounded-lg"
+                />
+                
+                <div className="absolute inset-0 flex items-center justify-between p-4">
+                  <motion.button
+                    onClick={prevGalleryImage}
+                    className="p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <ChevronLeft size={24} />
+                  </motion.button>
+                  
+                  <motion.button
+                    onClick={nextGalleryImage}
+                    className="p-2 rounded-full bg-black/50 text-white hover:bg-black/70 transition-colors"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <ChevronRight size={24} />
+                  </motion.button>
+                </div>
+              </div>
+              
+              <div className="text-center mt-4 text-white">
+                <span className="text-sm">
+                  {currentGalleryIndex + 1} of {galleryImages.length}
+                </span>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

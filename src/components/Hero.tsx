@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Download, Send } from 'lucide-react';
@@ -96,10 +98,10 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <span>Let's Work Together</span>
+              <span>Let&apos;s Work Together</span>
               <Send size={18} />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="/resume.pdf" 
               className="btn bg-transparent border-2 border-primary-400 text-white font-semibold py-3 px-8 rounded-full inline-flex items-center justify-center gap-2 transition-all duration-300 hover:bg-primary-400/10"
               whileHover={{ scale: 1.05 }}
@@ -107,7 +109,7 @@ const Hero: React.FC = () => {
             >
               <span>Download Resume</span>
               <Download size={18} />
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </motion.div>
       </div>

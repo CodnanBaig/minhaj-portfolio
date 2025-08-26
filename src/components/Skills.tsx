@@ -1,9 +1,12 @@
+'use client'
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { 
   Users, Award, Zap, DollarSign, 
-  Handshake, Lightbulb, Globe 
+  Handshake, Lightbulb, Globe, 
+  Building2, FileText
 } from 'lucide-react';
 
 const Skills: React.FC = () => {
@@ -74,6 +77,18 @@ const Skills: React.FC = () => {
       name: "Cross-border Operations",
       level: 95,
       description: "Executing seamless productions across UAE, KSA, Qatar, and Singapore."
+    }
+    ,{
+      icon: <Building2 size={28} />,
+      name: "Event Infrastructure Design",
+      level: 93,
+      description: "Planning and delivering heavy-duty grandstands, platforms, and structural systems for high-impact, high-traffic events."
+    }
+    ,{
+      icon: <FileText size={28} />,
+      name: "Concept & Build Strategy",
+      level: 92,
+      description: "Developing sharp, executable build concepts that align creative ambition with site realities and structural logic."
     }
   ];
 
