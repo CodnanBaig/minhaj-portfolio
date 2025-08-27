@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChevronLeft, ChevronRight, Link, Calendar, MapPin, Image as ImageIcon, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, MapPin, Image as ImageIcon, X } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
@@ -26,10 +26,10 @@ const Projects: React.FC = () => {
         "/optimized/wireless abu dhabi/website-banner-size-1050450-new-1-14-1280x720.png",
         "/optimized/wireless abu dhabi/GettyImages-1474070432_SMALL.jpg"
       ],
-      description: "Led production for the Abu Dhabi edition of the iconic Wireless Festival, managing multiple stages, international artists, and large-scale audience experiences.",
+      description: "Led production for the Abu Dhabi edition of Wireless Festival, one of the world's leading urban music festivals. Oversaw multi-stage builds, global artist management, and audience logistics to successfully establish the festival's Middle East debut.",
       date: "2023",
       location: "Abu Dhabi, UAE",
-      tags: ["Music Festival", "International Artists", "Multi-Stage Production", "PHNTM"]
+      tags: ["MUSIC FESTIVAL PRODUCTION", "MULTI-STAGE ENGINEERING", "TECHNICAL PRODUCTION", "INTERNATIONAL ARTIST LOGISTICS", "AUDIENCE OPERATIONS", "FESTIVAL SITE MANAGEMENT", "GLOBAL BRAND INTEGRATION", "PHNTM"]
     },
     {
       title: "Blackpink Middle East Tour",
@@ -43,10 +43,10 @@ const Projects: React.FC = () => {
         "/optimized/black pink/2.jpeg",
         "/optimized/black pink/3.png"
       ],
-      description: "Directed production for Blackpink's Middle East tour stops, including Riyadh and Abu Dhabi, delivering world-class concert experiences for thousands of fans.",
+      description: "Directed production for Blackpink's Middle East tour, staging arena-scale performances in Riyadh and Abu Dhabi. Executed a complex technical rider including LED screens, lasers, FX, and pyrotechnics on the Star Live Titan, the world's largest outdoor staging system. Delivered a K-pop spectacle that ignited the desert and thrilled tens of thousands of fans.",
       date: "2023",
       location: "Riyadh, KSA & Abu Dhabi, UAE",
-      tags: ["Concert Tour", "International Artists", "Arena Production", "PHNTM"]
+      tags: ["TECHNICAL PRODUCTION", "ARENA SHOW DIRECTION", "EVENT MANAGEMENT & LOGISTICS", "TOURING CONCERT PRODUCTION", "LED, LASER & FX INTEGRATION", "STADIUM-SCALE INFRASTRUCTURE", "FAN EXPERIENCE DELIVERY", "PHNTM"]
     },
     {
       title: "Maraya Concert Series",
@@ -61,10 +61,10 @@ const Projects: React.FC = () => {
         "/optimized/maraya concert series/Maraya_One_Republic-012.jpg",
         "/optimized/maraya concert series/Maraya_One_Republic-028.jpg"
       ],
-      description: "Managed production for the prestigious concert series in the historic city of Al Ula, creating unforgettable musical experiences in a unique cultural setting.",
+      description: "Produced the Maraya Concert Series inside the world's largest mirrored building in Al Ula. Developed unique, artist-specific staging that blended immersive visuals with the cultural spirit of the desert. Delivered bespoke international concerts that elevated Al Ula's identity as a global cultural hub.",
       date: "2023",
       location: "Al Ula, KSA",
-      tags: ["Concert Series", "Cultural Venue", "International Artists", "PHNTM"]
+      tags: ["CONCEPT DEVELOPMENT", "EXPERIENTIAL DESIGN", "LIVE SHOW CREATION", "MOTION GRAPHICS & CONTENT", "CULTURAL VENUE PROGRAMMING", "TECHNICAL PRODUCTION", "INTERNATIONAL ARTIST MANAGEMENT", "PHNTM"]
     },
     {
       title: "EXPO 2020 Opening Ceremony",
@@ -76,10 +76,10 @@ const Projects: React.FC = () => {
         "/optimized/expo 2020 opening ceremony/9fd1c463-22e4-4bbe-8313-b6d6923f194f.jpg",
         "/optimized/expo 2020 opening ceremony/expo-open.png"
       ],
-      description: "Led scenic and technical production for one of the UAE's largest global showcases, managing complex staging and infrastructure elements for the world stage.",
+      description: "Led scenic and technical delivery for the EXPO 2020 Dubai Opening Ceremony, one of the largest cultural showcases on the global stage. Managed multi-layered staging, immersive scenic builds, and broadcast-ready systems that brought Dubai's vision to life in front of a worldwide audience.",
       date: "2021",
       location: "Dubai, UAE",
-      tags: ["Opening Ceremony", "World Expo", "Technical Production", "Five Currents"]
+      tags: ["OPENING CEREMONY DIRECTION", "WORLD EXPO PRODUCTION", "TECHNICAL STAGING & SYSTEMS", "MEGA-EVENT INFRASTRUCTURE", "BROADCAST INTEGRATION", "Five Currents"]
     },
     {
       title: "Lusail Super Cup Opening Ceremony",
@@ -95,10 +95,10 @@ const Projects: React.FC = () => {
         "/optimized/lusail super cup/Lusail_Opening-178.jpg",
         "/optimized/lusail super cup/Lusail_Opening-231.jpg"
       ],
-      description: "Directed the opening ceremony production for the Lusail Super Cup, creating a spectacular showcase of sports and entertainment in Qatar.",
+      description: "Directed the stadium-scale production for the Lusail Super Cup, uniting culture and sport at Qatar's 80,000-capacity national stadium. Delivered a full-scale entertainment spectacle that framed the championship match with a headline concert, establishing Lusail as a global mega-event destination ahead of the FIFA World Cup.",
       date: "2022",
       location: "Doha, Qatar",
-      tags: ["Sports Ceremony", "Opening Show", "International Event", "PHNTM"]
+      tags: ["CULTURAL STRATEGY", "STADIUM SPECTACLE", "EXPERIENTIAL DESIGN", "LIVE SHOW DIRECTION", "TECHNICAL PRODUCTION", "EVENT MANAGEMENT & LOGISTICS", "SPORTS & ENTERTAINMENT INTEGRATION", "PHNTM"]
     },
     {
       title: "Qatar Live Entertainment",
@@ -114,10 +114,10 @@ const Projects: React.FC = () => {
         "/optimized/qatar live/QatarLive_21_MAJIDA-188.jpg",
         "/optimized/qatar live/QatarLive_21_MAJIDA-189.jpg"
       ],
-      description: "Managed production for Qatar Live, delivering high-impact entertainment experiences during a major international sporting event.",
-      date: "2022",
+      description: "Partnered with FIFA and Qatar Tourism to deliver Qatar Live 2021, a flagship cultural and entertainment program alongside the FIFA Arab Cup. Reimagined the Doha Exhibition & Convention Center with cutting-edge staging, immersive environments, and world-class performances. Elevated live entertainment benchmarks in the region by blending international spectacle with Qatari cultural identity.",
+      date: "2021",
       location: "Doha, Qatar",
-      tags: ["Entertainment", "Sports Event", "International Production", "PHNTM"]
+      tags: ["LIVE SHOW CREATION", "EXPERIENTIAL DESIGN", "TECHNICAL PRODUCTION", "CULTURAL PROGRAMMING", "MOTION GRAPHICS & CONTENT", "AUDIENCE EXPERIENCE DESIGN", "EVENT MANAGEMENT & OPERATIONS", "PHNTM"]
     },
     {
       title: "IO.net Production",
@@ -295,14 +295,6 @@ const Projects: React.FC = () => {
                       <ImageIcon size={16} />
                       <span>View Gallery</span>
                     </motion.button>
-                    <motion.a
-                      href="#"
-                      className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 transition-colors"
-                      whileHover={{ x: 5 }}
-                    >
-                      <span>View Project Details</span>
-                      <Link size={16} />
-                    </motion.a>
                   </div>
                 </div>
               </motion.div>
