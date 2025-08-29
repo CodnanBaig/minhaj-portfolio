@@ -58,20 +58,20 @@ const About: React.FC = () => {
               Live Events & Production Leader Delivering High-Impact Experiences Across MENA & Asia
             </h3>
             <p className="mb-4">
-              I&apos;m Minhaj Gouda — a calm-headed force behind some of the Middle East&apos;s boldest live experiences. 
+              I am Minhaj Gouda, a calm-headed force behind some of the Middle East&apos;s boldest live experiences. 
               With over a decade of experience across the UAE, Saudi Arabia, Qatar, and Singapore, 
-              I&apos;ve built a career delivering projects where failure is not an option.
+              I have built a career delivering projects where failure is not an option.
             </p>
             <p className="mb-4">
               From world expos and government showcases to arena-scale concerts, cultural spectacles, 
-              and brand-defining activations, I&apos;ve built and led diverse teams to deliver experiences at scale. 
-              With a track record of managing high-stakes, multi-million-dirham builds, I drive production from 
-              the first brief to final applause — combining strategic foresight, creative precision, and 
+              and brand-defining activations, I have led diverse teams to deliver experiences at scale. 
+              With a track record of managing high-stakes, multi-million dollar builds, I drive production from 
+              the first brief to the final applause by combining strategic foresight, creative precision, and 
               operational control at every step.
             </p>
             <p>
-              Whether it&apos;s an opening ceremony for the world, a concert for 80,000 fans, or a government-led 
-              initiative on the global stage, I know how to make experiences unforgettable — and deliver under pressure.
+              Whether it is an opening ceremony for the world, a concert for 80,000 fans, or a government-led 
+              initiative on the global stage, I know how to make experiences unforgettable and deliver under pressure.
             </p>
           </motion.div>
 

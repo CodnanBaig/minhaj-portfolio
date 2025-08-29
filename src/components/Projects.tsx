@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ChevronLeft, ChevronRight, Calendar, MapPin, Image as ImageIcon, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
@@ -250,10 +251,11 @@ const Projects: React.FC = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="relative h-[400px] overflow-hidden rounded-xl">
-                  <img 
-                    src={projects[currentIndex].image} 
+                  <Image
+                    src={projects[currentIndex].image}
                     alt={projects[currentIndex].title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
 
@@ -352,9 +354,11 @@ const Projects: React.FC = () => {
               </button>
               
               <div className="relative">
-                <img
+                <Image
                   src={galleryImages[currentGalleryIndex]}
                   alt={`Gallery image ${currentGalleryIndex + 1}`}
+                  width={800}
+                  height={600}
                   className="max-w-full max-h-[80vh] object-contain rounded-lg"
                 />
                 

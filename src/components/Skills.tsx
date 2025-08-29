@@ -46,7 +46,7 @@ const Skills: React.FC = () => {
       icon: <Award size={28} />,
       name: "Large-Scale Event Production",
       level: 95,
-      description: "Managing high-stakes, multi-million-dirham builds from brief to final applause."
+      description: "Managing high-stakes, multi-million dollar builds from brief to final applause."
     },
     {
       icon: <Zap size={28} />,
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
       icon: <DollarSign size={28} />,
       name: "Budgeting & Cost Control",
       level: 92,
-      description: "Optimizing resources and managing budgets for complex, multi-million-dirham productions."
+      description: "Optimizing resources and managing budgets for complex, multi-million dollar productions."
     },
     {
       icon: <Handshake size={28} />,
@@ -126,18 +126,8 @@ const Skills: React.FC = () => {
                   <div className="p-4 bg-primary-900/40 rounded-full mb-4 text-accent-400">
                     {skill.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{skill.name}</h3>
-                  
-                  <div className="w-full h-2 bg-dark-400 rounded-full mb-2">
-                    <motion.div
-                      className="h-full bg-accent-500 rounded-full"
-                      style={{ width: `${skill.level}%` }}
-                      initial={{ width: 0 }}
-                      animate={inView ? { width: `${skill.level}%` } : { width: 0 }}
-                      transition={{ duration: 1, delay: 0.2 }}
-                    />
-                  </div>
-                  
+                  <h3 className="text-xl font-bold mb-4">{skill.name}</h3>
+
                   <p className="text-sm text-gray-300">
                     {skill.description}
                   </p>

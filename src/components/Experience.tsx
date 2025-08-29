@@ -32,7 +32,7 @@ const Experience: React.FC = () => {
         "Directed region-wide production operations, overseeing large-scale projects in the UAE, KSA, Qatar, and Singapore",
         "Developed business strategy and executed growth plans that expanded market share and profitability across multiple markets",
         "Managed cross-functional creative, production, and technical teams for flawless delivery across international events",
-        "Built and nurtured long-term client partnerships, driving recurring multi-million-dirham contracts and cross-border collaborations"
+        "Built and nurtured long-term client partnerships, driving recurring multi-million dollar contracts and cross-border collaborations"
       ],
     },
     {
