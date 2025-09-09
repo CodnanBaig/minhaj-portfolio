@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronUp, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { ChevronUp, Linkedin, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -29,29 +29,25 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex justify-center gap-6 mb-8">
-            <motion.a 
-              href="#" 
+            <motion.a
+              href="https://www.linkedin.com/in/minhaj-gouda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               className="text-gray-400 hover:text-white transition-colors"
               whileHover={{ y: -3 }}
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin size={20} />
             </motion.a>
-            <motion.a 
-              href="#" 
+            <motion.a
+              href="https://www.instagram.com/minhajgouda?igsh=MTgzaTBoeXVjNDB1Nw%3D%3D&utm_source=qr"
               className="text-gray-400 hover:text-white transition-colors"
               whileHover={{ y: -3 }}
               aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Instagram size={20} />
-            </motion.a>
-            <motion.a 
-              href="#" 
-              className="text-gray-400 hover:text-white transition-colors"
-              whileHover={{ y: -3 }}
-              aria-label="Twitter"
-            >
-              <Twitter size={20} />
             </motion.a>
           </div>
           

@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Send, Mail, MapPin, Phone, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { Send, Mail, MapPin, Phone, Linkedin, Instagram } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [ref, inView] = useInView({
@@ -77,15 +77,20 @@ const Contact: React.FC = () => {
     {
       icon: <Linkedin size={24} className="text-accent-400" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/minhaj-gouda",
+      value: "https://www.linkedin.com/in/minhaj-gouda",
     },
   ];
 
   const socialLinks = [
-    { 
-      icon: <Linkedin size={20} />, 
-      url: "https://linkedin.com/in/minhaj-gouda", 
-      name: "LinkedIn" 
+    {
+      icon: <Linkedin size={20} />,
+      url: "https://www.linkedin.com/in/minhaj-gouda?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      name: "LinkedIn"
+    },
+    {
+      icon: <Instagram size={20} />,
+      url: "https://www.instagram.com/minhajgouda?igsh=MTgzaTBoeXVjNDB1Nw%3D%3D&utm_source=qr",
+      name: "Instagram"
     },
   ];
 
