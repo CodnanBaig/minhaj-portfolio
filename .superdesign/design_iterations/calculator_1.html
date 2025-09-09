@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="calculator_theme_1.css" rel="stylesheet">
+</head>
+<body class="bg-background text-foreground font-sans min-h-screen p-4 flex items-center justify-center">
+    <div class="w-full max-w-sm bg-muted rounded-2xl shadow-lg p-4 space-y-4">
+        <div class="display bg-input rounded-xl p-4 text-right text-3xl font-medium h-20 flex items-center justify-end">
+            0
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+            <button class="col-span-2 bg-secondary hover:bg-secondary/90 text-lg p-4 rounded-xl transition-all">C</button>
+            <button class="bg-accent hover:bg-accent/90 p-4 rounded-xl transition-all">⌫</button>
+            <button class="operator bg-primary hover:bg-primary/90 p-4 rounded-xl transition-all">÷</button>
+            
+            <button class="bg-input hover:bg-border p-4 rounded-xl">7</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">8</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">9</button>
+            <button class="operator bg-primary hover:bg-primary/90 p-4 rounded-xl transition-all">×</button>
+            
+            <button class="bg-input hover:bg-border p-4 rounded-xl">4</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">5</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">6</button>
+            <button class="operator bg-primary hover:bg-primary/90 p-4 rounded-xl transition-all">-</button>
+            
+            <button class="bg-input hover:bg-border p-4 rounded-xl">1</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">2</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">3</button>
+            <button class="operator bg-primary hover:bg-primary/90 p-4 rounded-xl transition-all">+</button>
+            
+            <button class="col-span-2 bg-input hover:bg-border p-4 rounded-xl">0</button>
+            <button class="bg-input hover:bg-border p-4 rounded-xl">.</button>
+            <button class="bg-accent hover:bg-accent/90 p-4 rounded-xl transition-all">=</button>
+        </div>
+    </div>
+</body>
+</html>
