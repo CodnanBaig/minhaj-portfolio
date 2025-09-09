@@ -26,7 +26,7 @@ const Experience: React.FC = () => {
     {
       position: "General Manager",
       company: "PHNTM",
-      duration: "2021-2025",
+      duration: "Nov 2021 - Apr 2025",
       location: "Middle East & Singapore",
       description: [
         "Directed region-wide production operations, overseeing large-scale projects in the UAE, KSA, Qatar, and Singapore",
