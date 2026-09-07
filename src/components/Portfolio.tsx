@@ -193,8 +193,6 @@ export default function Portfolio() {
   const { scrollY, scrollYProgress } = useScroll();
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 120, damping: 30, restDelta: 0.001 });
   const { scrollYProgress: heroProgress } = useScroll({ target: heroRef, offset: ['start start', 'end start'] });
-  const heroScale = useTransform(heroProgress, [0, 1], [1, 1.14]);
-  const heroY = useTransform(heroProgress, [0, 1], ['0%', '16%']);
   const heroOpacity = useTransform(heroProgress, [0, 0.78, 1], [1, 1, 0]);
 
   const openProject = (project: Project) => { setSelectedProject(project); setGalleryIndex(0); };
@@ -229,8 +227,14 @@ export default function Portfolio() {
       </motion.div>
 
       <section id="top" ref={heroRef} className="hero">
-        <motion.div className="hero-media" style={{ scale: heroScale, y: heroY }}><img src="/optimized/black pink/BlackPink_MiddleEast-001.jpg" alt="Large-scale concert production" /></motion.div>
-        <div className="hero-scrim" />
+        <motion.div className="hero-visual" style={{ opacity: heroOpacity }} aria-hidden="true">
+          <div className="hero-grid" />
+          <div className="hero-orbit hero-orbit--outer" />
+          <div className="hero-orbit hero-orbit--inner" />
+          <div className="hero-signal"><span /></div>
+          <div className="hero-visual-label hero-visual-label--top">LIVE / 2026</div>
+          <div className="hero-visual-label hero-visual-label--bottom">FIELD NOTE 01 <span>09° 03′ 24″ N</span></div>
+        </motion.div>
         <motion.div className="hero-content" style={{ opacity: heroOpacity }}>
           <p className="hero-kicker">Operations · Growth · Live Experiences</p>
           <h1><span>MINHAJ</span><span>GOUDA</span></h1>
@@ -294,7 +298,7 @@ export default function Portfolio() {
 
       <section id="contact" className="contact section-pad">
         <div className="section-index">06 — Contact</div>
-        <div className="contact-wrap"><p className="contact-kicker">For partnerships, projects and opportunities</p><a className="contact-mail" href="mailto:minhajgouda@gmail.com">Let’s build what’s next.<ArrowUpRight /></a><div className="contact-meta"><div><span>Based in</span><p>Dubai, UAE<br />Available across MENA & Asia</p></div><div><span>Email</span><a href="mailto:minhajgouda@gmail.com"><Mail size={16} /> minhajgouda@gmail.com</a></div><div><span>Social</span><p className="social-row"><a href="https://www.linkedin.com/in/minhaj-gouda" target="_blank" rel="noreferrer"><Linkedin size={18} /> LinkedIn</a><a href="https://www.instagram.com/minhajgouda" target="_blank" rel="noreferrer"><Instagram size={18} /> Instagram</a></p></div></div></div>
+        <div className="contact-wrap"><p className="contact-kicker">For partnerships, projects and opportunities</p><a className="contact-mail" href="mailto:minhajgouda@gmail.com">Let’s build what’s next.<ArrowUpRight /></a><div className="contact-meta"><div><span>Based in</span><p>Dubai, UAE<br />Available across MENA & Asia</p></div><div className="contact-email"><span>Email</span><a href="mailto:minhajgouda@gmail.com"><Mail size={16} /> minhajgouda@gmail.com</a></div><div><span>Social</span><p className="social-row"><a href="https://www.linkedin.com/in/minhaj-gouda" target="_blank" rel="noreferrer"><Linkedin size={18} /> LinkedIn</a><a href="https://www.instagram.com/minhajgouda" target="_blank" rel="noreferrer"><Instagram size={18} /> Instagram</a></p></div></div></div>
       </section>
 
       <footer><span>Minhaj Gouda © 2026</span><a href="#top">Back to top ↑</a></footer>
