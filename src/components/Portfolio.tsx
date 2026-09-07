@@ -114,6 +114,13 @@ const capabilities = [
   ['Concept & Build Strategy','Developing sharp, executable build concepts that align creative ambition with site realities and structural logic.'],
 ] as const;
 
+const businessForward = [
+  ['Growth', 'Turning opportunity into sustainable business momentum.'],
+  ['Operations', 'Building the structure, teams and systems that make performance repeatable.'],
+  ['Clients', 'Creating trusted relationships that grow into long-term partnerships.'],
+  ['Delivery', 'Turning ambitious ideas into clear, well-executed outcomes.'],
+] as const;
+
 const experience = [
   {
     role: 'Director of Operations', company: 'Backstage Scaffolding', period: 'June 2026 — Present', place: 'Middle East',
@@ -251,7 +258,23 @@ export default function Portfolio() {
             <p>I’m at my best where business, people, creativity and execution meet—turning ambitious ideas into commercially sound, operationally strong and memorable live experiences.</p>
           </div>
         </div>
-        <div className="metrics" aria-label="Career highlights"><div><strong>10+</strong><span>Years across live events & operations</span></div><div><strong>05</strong><span>Markets across MENA & Asia</span></div><div><strong>80K</strong><span>Capacity stadium-scale delivery</span></div><div><strong>360°</strong><span>Business, client & project leadership</span></div></div>
+        <div
+          aria-label="How I move business forward"
+          style={{ marginTop: 120, borderTop: '1px solid var(--line)', borderBottom: '1px solid var(--line)' }}
+        >
+          <p style={{ margin: 0, padding: '18px 0', color: 'var(--acid)', fontSize: 10, textTransform: 'uppercase', letterSpacing: '.18em' }}>
+            How I move business forward
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', borderTop: '1px solid var(--line)' }}>
+            {businessForward.map(([name, description], index) => (
+              <article key={name} style={{ padding: '30px 28px 34px', borderRight: '1px solid var(--line)', minHeight: 180 }}>
+                <span style={{ display: 'block', marginBottom: 34, color: 'var(--acid)', fontSize: 10, letterSpacing: '.12em' }}>{String(index + 1).padStart(2, '0')}</span>
+                <h3 style={{ margin: 0, fontSize: 'clamp(24px, 2.2vw, 36px)', lineHeight: 1, letterSpacing: '-.045em', textTransform: 'uppercase' }}>{name}</h3>
+                <p style={{ margin: '14px 0 0', maxWidth: 300, color: '#c2c0b7', fontSize: 14, lineHeight: 1.55 }}>{description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section id="work" className="work-intro section-pad">
