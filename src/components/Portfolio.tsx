@@ -32,7 +32,7 @@ const navigation = [
   ['Contact', '#contact'],
 ] as const;
 
-const projectLights = ['#75dfff', '#ff6cbb', '#b49bff', '#f8b566', '#7bdce9', '#ff7798'] as const;
+const projectLights = ['#75dfff', '#87c8ff', '#9bcaff', '#f8b566', '#7bdce9', '#68b9e8'] as const;
 const easeOut = [0.16, 1, 0.3, 1] as const;
 
 function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {

@@ -7,7 +7,6 @@ colors:
   warm-white: "#f7f0ea"
   supporting-text: "#aca6b3"
   electric-blue: "#75dfff"
-  concert-pink: "#ff6cbb"
   amber-cue: "#f8b566"
 typography:
   display:
@@ -37,7 +36,7 @@ The site follows the owner's chosen direction of concert energy with bolder colo
 
 ## Colors
 
-Electric blue and concert pink are the primary lighting cues. Amber marks experience and the final invitation. Warm white holds headlines and essential text against stage black. Raised dark surfaces separate the profile, archive, and experience without card shadows.
+Electric blue is the primary lighting cue. Amber marks experience and the final invitation. Warm white holds headlines and essential text against stage black. Raised dark surfaces separate the profile, archive, and experience without card shadows.
 
 Color is concentrated in section accents, image light, and the contact invitation. Long copy stays warm white or supporting gray.
 
@@ -45,13 +44,28 @@ Color is concentrated in section accents, image light, and the contact invitatio
 
 Barlow Condensed carries the hero, section headlines, project titles, navigation menu, and short labels. Barlow carries navigation labels, body copy, descriptions, and metadata. Display type is uppercase and tightly set; paragraph text keeps comfortable line height and a bounded reading width.
 
+Eight shared size roles define the active interface. Components use these tokens instead of their own font sizes. Mobile overrides apply at 700px.
+
+| Role | Desktop | Phone |
+| --- | --- | --- |
+| Label / metadata | 12px | 12px |
+| Navigation / action | 14px | 14px |
+| Body / experience bullets | 18px | 17px |
+| Lead paragraph | 26px | 22px |
+| Item heading | 44px | 34px |
+| Section heading | 72–144px, fluid | 56–88px, fluid |
+| Project / contact display | 80–160px, fluid | 52–88px, fluid |
+| Hero identity | 140–360px, fluid | 88–116px, fluid |
+
+The hero retains positive tracking of 0.025em. Project chapters have enough height on phones to accommodate full descriptions at the body size.
+
 The largest type is reserved for identity, selected projects, and the final contact invitation. Body text is not forced into uppercase.
 
 ## Layout
 
 Desktop sections use wide page gutters and asymmetric text grids. Six selected projects become sticky, full-viewport chapters with image parallax and a colored curtain. The three remaining projects form an offset archive. Capability rows and experience entries use visible horizontal rules instead of cards.
 
-At 1050px the navigation changes to a full-screen menu. At 700px the hero offsets the two name lines across the phone screen, separates them with a small light cue, and renders Gouda in concert pink. Text grids become single column and project copy moves lower over a stronger image shade. Below 430px the four business pillars become single-column rows.
+At 1050px the navigation changes to a full-screen menu. At 700px the hero offsets the two name lines across the phone screen, separates them with a small light cue, and renders Gouda in electric blue. Text grids become single column and project copy moves lower over a stronger image shade. Below 430px the four business pillars become single-column rows.
 
 ## Elevation & Depth
 
